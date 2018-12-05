@@ -206,8 +206,7 @@ return $.widget( "ui.menu", {
 			.find( ".ui-menu" ).addBack()
 				.removeAttr( "role aria-labelledby aria-expanded aria-hidden aria-disabled " +
 					"tabIndex" )
-				.removeUniqueId()
-				.show();
+				.removeUniqueId();
 
 		submenus.children().each( function() {
 			var elem = $( this );
