@@ -546,7 +546,7 @@ return $.widget( "ui.menu", {
 	_isDivider: function( item ) {
 
 		// Match hyphen, em dash, en dash
-		return !/[^\-\u2014\u2013\s]/.test( item.text() );
+		return item.text().length > 0 && !/[^\-\u2014\u2013\s]/.test( item.text() );
 	},
 
 	collapse: function( event ) {
